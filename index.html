@@ -1,16 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Central de Atendimento</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento Rápido</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 420px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: #16a34a;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: #15803d;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            background: #16a34a;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">✓</div>
+
+        <h1>Atendimento Rápido</h1>
+
+        <p>
+            Olá! Estamos prontos para atender você.
+            Clique em uma das opções abaixo para falar conosco pelo WhatsApp.
+        </p>
+
+        <a class="btn" href="https://wa.me/5511967450723" target="_blank">
+            💬 Atendimento pelo WhatsApp
+        </a>
+
+        <a class="btn" href="https://wa.me/5511967450723" target="_blank">
+            📞 Falar com um atendente
+        </a>
+
+        <a class="btn" href="https://wa.me/5511967450723" target="_blank">
+            🟢 Solicitar atendimento
+        </a>
+
+        <div class="footer">
+            Atendimento online
+        </div>
+
+    </div>
+
+</body>
 </html>
